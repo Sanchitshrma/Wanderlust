@@ -10,6 +10,7 @@
         novalidate
         class="needs-validation"
         id="listingForm"
+        enctype="multipart/form-data"
       >
         <div class="mb-3">
           <label for="title" class="form-label">Title</label>
@@ -37,20 +38,20 @@
           <div class="invalid-feedback">Description is required.</div>
           <div class="valid-feedback">Looks good!</div>
         </div>
+
         <div class="mb-3">
-          <label for="image" class="form-label">Image</label>
+          Original Listing Image <br />
+          <img src="<%=originalImageUrl%>" />
+        </div>
+
+        <div class="mb-3">
+          <label for="image" class="form-label">Uplaod New Image</label>
           <input
             name="listing[image]"
-            value="<%=listing.image%>"
             id="image"
-            type="text"
+            type="file"
             class="form-control"
-            required
           />
-          <div class="invalid-feedback">
-            Image URL is required, and ensure it's correct.
-          </div>
-          <div class="valid-feedback">Looks good!</div>
         </div>
         <div class="row">
           <div class="mb-3 col-md-4">

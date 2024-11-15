@@ -24,7 +24,12 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <link href="/public/css/rating.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/css/rating.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.js"></script>
   </head>
   <body>
     <%- include("../includes/navbar.ejs")%>
@@ -41,6 +46,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="/js/script.js"></script>
-    <script src="/public/js/script.js"></script>
   </body>
 </html>
