@@ -15,17 +15,19 @@ module.exports.renderNewForm = (req, res) => {
 module.exports.showListing = async (req, res) => {
   let { id } = req.params;
   const listing = await Listing.findById(id)
-    .populate({
-      path: "reviews",
-      populate: {
-        path: "author",
-      },
-    })
+    .populate({ path: "reviews", populate: { path: "author" } })
     .populate("owner");
   if (!listing) {
-    req.flash("error", " Listings you requested for does not exist !");
+    req.flash("error", " Listing you requested does not exist");
     res.redirect("/listings");
   }
+  let response = await geocodingClient
+    .forwardGeocode({
+      query: listing.location,
+      limit: 1,
+    })
+    .send();
+  listing.geometry = response.body.features[0].geometry;
   res.render("listings/show.ejs", { listing });
 };
 
