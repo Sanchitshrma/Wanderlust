@@ -99,7 +99,7 @@ app.use("/listings/:id/reviews", reviewsRouter);
 app.use("/", userRouter);
 
 app.all("*", (req, res, next) => {
-  res.render("/listings");
+  res.redirect("/listings");
   next(new ExpressError(404, "Page not found"));
 });
 
