@@ -109,6 +109,6 @@ app.use((err, req, res, next) => {
   // res.status(statusCode).render("./listings/error.ejs", { err });
 });
 
-app.listen("8000", () => {
-  console.log("server is listening on port 8000");
+app.listen(dbUrl, () => {
+  console.log("server is listening");
 });
