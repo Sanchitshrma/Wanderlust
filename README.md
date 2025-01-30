@@ -1,9 +1,9 @@
-**Wanderlust Overview**:  
-Wanderlust is an innovative platform that connects travelers with unique accommodations worldwide. The website offers a seamless user experience, allowing hosts to list their properties and guests to find and book stays tailored to their preferences. It emphasizes ease of use with features like robust search filters, interactive maps, and detailed property listings. With a clean design and user-friendly interface, Wanderlust caters to both hosts seeking to monetize their spaces and travelers looking for memorable experiences.
+**NomadNest Overview**:  
+NomadNest is an innovative platform that connects travelers with unique accommodations worldwide. The website offers a seamless user experience, allowing hosts to list their properties and guests to find and book stays tailored to their preferences. It emphasizes ease of use with features like robust search filters, interactive maps, and detailed property listings. With a clean design and user-friendly interface, NomadNest caters to both hosts seeking to monetize their spaces and travelers looking for memorable experiences.
 
-**Wanderlust - Tech Overview**  
+**NomadNest - Tech Overview**  
 
-Wanderlust is built using a modern tech stack to ensure performance, scalability, and a smooth user experience:  
+NomadNest is built using a modern tech stack to ensure performance, scalability, and a smooth user experience:  
 
 1. **Frontend**:  
    - **HTML**: For structuring the website and ensuring semantic markup.  
@@ -21,4 +21,4 @@ Wanderlust is built using a modern tech stack to ensure performance, scalability
    - RESTful APIs facilitate communication between the frontend and backend, enabling secure data transfer.  
    - Tools like EJS or similar templating engines may be used for rendering dynamic content.  
 
-This tech stack ensures that Wanderlust is robust, user-friendly, and capable of handling real-world scalability requirements for hosting and travel booking functionalities.
+This tech stack ensures that NomadNest is robust, user-friendly, and capable of handling real-world scalability requirements for hosting and travel booking functionalities.
