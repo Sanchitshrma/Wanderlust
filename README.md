@@ -22,3 +22,5 @@ NomadNest is built using a modern tech stack to ensure performance, scalability,
    - Tools like EJS or similar templating engines may be used for rendering dynamic content.  
 
 This tech stack ensures that NomadNest is robust, user-friendly, and capable of handling real-world scalability requirements for hosting and travel booking functionalities.
+
+
